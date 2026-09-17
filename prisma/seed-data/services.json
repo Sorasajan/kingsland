@@ -1,0 +1,286 @@
+[
+  {
+    "id": "counseling",
+    "slug": "free-counseling",
+    "icon": "MessagesSquare",
+    "title": "Free Career Counseling",
+    "shortDescription": "One-on-one sessions to map your profile to the right course, university, and country.",
+    "description": "Our certified counselors conduct a thorough assessment of your academic background, career goals, budget, and family situation before recommending the most suitable country, course, and university. Every student gets a personalised education roadmap.",
+    "tag": "Free",
+    "tagColor": "bg-green-100 text-green-700",
+    "accent": false,
+    "isFree": true,
+    "duration": "60 minutes",
+    "deliverables": [
+      "Academic profile assessment",
+      "Country and course shortlist (3–5 options)",
+      "Eligibility check for each option",
+      "Estimated budget breakdown",
+      "Personalised education roadmap",
+      "Timeline and next steps"
+    ],
+    "processSteps": [
+      "Book an appointment online or walk in",
+      "Submit your academic documents for pre-review",
+      "60-minute one-on-one counseling session",
+      "Receive personalised education roadmap",
+      "Follow-up session if needed"
+    ],
+    "order": 1
+  },
+  {
+    "id": "application",
+    "slug": "university-application",
+    "icon": "FileText",
+    "title": "University Application Assistance",
+    "shortDescription": "Complete SOP writing, LOR guidance, CV crafting, and application submission.",
+    "description": "We handle the complete university application process end-to-end. Our team has placed students in 150+ partner universities globally, with direct relationships that often result in faster decisions and special admission offers.",
+    "tag": "End-to-end",
+    "tagColor": "bg-blue-100 text-blue-700",
+    "accent": false,
+    "isFree": false,
+    "duration": "2–6 weeks",
+    "deliverables": [
+      "University shortlisting based on profile & budget",
+      "SOP (Statement of Purpose) writing & editing",
+      "LOR (Letter of Recommendation) guidance",
+      "CV / Resume crafting for academic applications",
+      "Academic transcript evaluation",
+      "Application submission to all selected universities",
+      "Offer letter negotiation",
+      "Scholarship application support"
+    ],
+    "processSteps": [
+      "University shortlisting workshop",
+      "Document collection and verification",
+      "SOP drafting (3 revision rounds included)",
+      "LOR preparation with professors/employers",
+      "Application submission and tracking",
+      "Offer letter review and acceptance guidance"
+    ],
+    "order": 2
+  },
+  {
+    "id": "test-prep",
+    "slug": "test-preparation",
+    "icon": "BookOpen",
+    "title": "IELTS / PTE / TOEFL Coaching",
+    "shortDescription": "Intensive batches with expert instructors, mock tests, and band-score guarantee.",
+    "description": "Our test preparation programmes are run by experienced, certified instructors who understand exactly what examiners are looking for. We offer small batches (max 15 students), unlimited mock tests, and a band score guarantee for students who complete the full programme.",
+    "tag": "Band Guarantee",
+    "tagColor": "bg-amber-100 text-amber-700",
+    "accent": false,
+    "isFree": false,
+    "duration": "4–12 weeks",
+    "deliverables": [
+      "Complete module-wise coaching (L/R/W/S)",
+      "20+ full-length mock tests",
+      "Individual feedback on every writing task",
+      "Speaking practice with mock examiner",
+      "Band score improvement tracking",
+      "Free re-enrollment if target not achieved"
+    ],
+    "tests": [
+      {
+        "name": "IELTS Academic",
+        "duration": "6 weeks",
+        "classSize": 15,
+        "mockTests": 20,
+        "guarantee": "Target band or free re-enroll",
+        "schedule": "Morning & Evening batches"
+      },
+      {
+        "name": "IELTS General Training",
+        "duration": "4 weeks",
+        "classSize": 15,
+        "mockTests": 15,
+        "guarantee": "Target band or free re-enroll",
+        "schedule": "Morning & Evening batches"
+      },
+      {
+        "name": "PTE Academic",
+        "duration": "4 weeks",
+        "classSize": 12,
+        "mockTests": "Unlimited",
+        "guarantee": "Target score or free re-enroll",
+        "schedule": "Morning & Afternoon batches"
+      },
+      {
+        "name": "SAT",
+        "duration": "10 weeks",
+        "classSize": 10,
+        "mockTests": 12,
+        "guarantee": null,
+        "schedule": "Weekend batches"
+      },
+      {
+        "name": "GRE",
+        "duration": "8 weeks",
+        "classSize": 10,
+        "mockTests": 10,
+        "guarantee": null,
+        "schedule": "Morning & Evening batches"
+      },
+      {
+        "name": "GMAT",
+        "duration": "10 weeks",
+        "classSize": 8,
+        "mockTests": 10,
+        "guarantee": null,
+        "schedule": "Weekend batches"
+      }
+    ],
+    "processSteps": [
+      "Free diagnostic test to assess current level",
+      "Enroll in suitable batch",
+      "Attend classes and complete homework",
+      "Take mock tests and get individual feedback",
+      "Final mock before official exam",
+      "Re-enrollment if target not reached"
+    ],
+    "order": 3
+  },
+  {
+    "id": "visa",
+    "slug": "visa-assistance",
+    "icon": "ShieldCheck",
+    "title": "Visa Assistance",
+    "shortDescription": "Expert documentation, GTE/SOP drafting, financial guidance with 98% success rate.",
+    "description": "Our visa team has an enviable 98% success rate across all major destinations. We meticulously prepare every aspect of your visa application — from financial affidavit structuring to mock interview coaching — ensuring the strongest possible case.",
+    "tag": "98% Success",
+    "tagColor": "bg-red-100 text-red-700",
+    "accent": true,
+    "isFree": false,
+    "duration": "2–4 weeks preparation",
+    "visaSuccessRate": 98,
+    "deliverables": [
+      "Complete document checklist and verification",
+      "GTE (Genuine Temporary Entrant) statement drafting",
+      "Financial affidavit and bank statement guidance",
+      "Academic gap explanation letters",
+      "Mock visa interview coaching (Australia, USA)",
+      "DS-160 / online form completion support",
+      "VFS appointment booking assistance",
+      "Post-decision guidance and lodgement appeal if needed"
+    ],
+    "countriesHandled": [
+      "Australia (Subclass 500)",
+      "United Kingdom (Student Visa)",
+      "Canada (Study Permit)",
+      "USA (F-1 Visa)",
+      "New Zealand (Student Visa)",
+      "Germany (National Visa)",
+      "Japan (Student Visa)",
+      "Ireland (Study Visa)"
+    ],
+    "processSteps": [
+      "Offer letter and COE review",
+      "Document compilation and verification",
+      "GTE / SOP drafting (2 rounds of editing)",
+      "Financial documentation structuring",
+      "Online application form completion",
+      "Mock interview (for US F-1 and Australian visa)",
+      "Biometrics and submission support",
+      "Post-decision debrief"
+    ],
+    "order": 4
+  },
+  {
+    "id": "scholarship",
+    "slug": "scholarship-guidance",
+    "icon": "Award",
+    "title": "Scholarship Guidance",
+    "shortDescription": "Identify merit, need-based, and government scholarships worth up to 100% tuition.",
+    "description": "Our scholarship counselors systematically identify every scholarship opportunity you are eligible for and guide you through a competitive application. We have helped students secure scholarships worth NPR crores, from Chevening to MEXT to university merit awards.",
+    "tag": "Up to 100% off",
+    "tagColor": "bg-purple-100 text-purple-700",
+    "accent": false,
+    "isFree": false,
+    "duration": "Concurrent with application",
+    "scholarshipsSecured": 320,
+    "deliverables": [
+      "Scholarship eligibility assessment",
+      "Personalised scholarship shortlist",
+      "Scholarship essay / motivation letter writing",
+      "Interview preparation for competitive scholarships",
+      "Reference letter coaching",
+      "Application submission and tracking",
+      "Reapplication strategy if unsuccessful"
+    ],
+    "scholarshipTypes": [
+      {
+        "type": "Government Scholarships",
+        "examples": ["Chevening (UK)", "Australia Awards", "MEXT (Japan)", "DAAD (Germany)", "Fulbright (USA)"],
+        "coverage": "Usually full funding"
+      },
+      {
+        "type": "University Merit Scholarships",
+        "examples": ["Vice-Chancellor's Excellence Awards", "Dean's List Scholarships", "International Student Awards"],
+        "coverage": "10–100% tuition waiver"
+      },
+      {
+        "type": "Need-Based Scholarships",
+        "examples": ["Financial need-based bursaries", "Country-specific aid"],
+        "coverage": "Varies"
+      },
+      {
+        "type": "Field-Specific Scholarships",
+        "examples": ["STEM scholarships", "Women in Tech", "Health Sector scholarships"],
+        "coverage": "Varies"
+      }
+    ],
+    "processSteps": [
+      "Academic and financial profile review",
+      "Scholarship database search and eligibility check",
+      "Shortlist presentation to student",
+      "Scholarship essay / SOP writing (dedicated)",
+      "Supporting document preparation",
+      "Submission and follow-up"
+    ],
+    "order": 5
+  },
+  {
+    "id": "departure",
+    "slug": "pre-departure",
+    "icon": "Plane",
+    "title": "Pre-Departure & Post-Arrival Support",
+    "shortDescription": "Orientation on living costs, accommodation, banking, healthcare and more.",
+    "description": "Our relationship with students does not end at the visa stamp. We organise comprehensive pre-departure orientations covering everything from packing to opening a bank account abroad, and connect students with our alumni network in their destination country.",
+    "tag": "Full support",
+    "tagColor": "bg-teal-100 text-teal-700",
+    "accent": false,
+    "isFree": true,
+    "duration": "1-day orientation + ongoing",
+    "deliverables": [
+      "Pre-departure orientation session",
+      "Accommodation hunting guidance",
+      "Airport transfer coordination",
+      "Bank account opening guide",
+      "Healthcare/insurance overview",
+      "Introduction to local Nepali student community",
+      "Alumni network connection in destination city",
+      "Emergency contact support abroad"
+    ],
+    "orientationTopics": [
+      "Packing essentials and what to leave behind",
+      "Money and banking abroad",
+      "Accommodation options (on-campus, homestay, rental)",
+      "Health insurance and Medicare/NHS/OHIP registration",
+      "Transportation and student discounts",
+      "Cultural adjustment and mental wellbeing",
+      "Part-time work rules and finding jobs",
+      "Academic expectations and plagiarism policies",
+      "Staying connected — SIM cards, internet",
+      "Emergency contacts and embassy information"
+    ],
+    "processSteps": [
+      "Confirm travel dates and itinerary review",
+      "Attend pre-departure orientation",
+      "Receive destination-specific resource pack",
+      "Get connected with alumni in your city",
+      "Arrival check-in with Summit team",
+      "Ongoing support via WhatsApp alumni group"
+    ],
+    "order": 6
+  }
+]

@@ -1,0 +1,49 @@
+import { NextRequest, NextResponse } from "next/server";
+import { prisma } from "@/lib/prisma";
+import { slugify } from "@/lib/slug";
+import { z } from "zod";
+
+const destinationSchema = z
+  .object({
+    name: z.string().trim().min(2).max(80),
+  })
+  .passthrough();
+
+function flatten(row: { id: string; slug: string; data: any }) {
+  return { id: row.id, slug: row.slug, ...(row.data as object) };
+}
+
+export async function GET() {
+  const rows = await prisma.destination.findMany({ orderBy: { createdAt: "asc" } });
+  return NextResponse.json({ destinations: rows.map(flatten) });
+}
+
+export async function POST(req: NextRequest) {
+  let body: unknown;
+  try {
+    body = await req.json();
+  } catch {
+    return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
+  }
+
+  const parsed = destinationSchema.safeParse(body);
+  if (!parsed.success) {
+    return NextResponse.json(
+      { error: "Validation failed", details: parsed.error.flatten().fieldErrors },
+      { status: 400 }
+    );
+  }
+
+  const baseSlug = slugify(parsed.data.name);
+  let slug = baseSlug;
+  let n = 1;
+  while (await prisma.destination.findUnique({ where: { slug } })) {
+    slug = `${baseSlug}-${++n}`;
+  }
+
+  const row = await prisma.destination.create({
+    data: { id: slug, slug, name: parsed.data.name, data: parsed.data },
+  });
+
+  return NextResponse.json({ destination: flatten(row) }, { status: 201 });
+}

@@ -1,0 +1,590 @@
+[
+  {
+    "id": "australia",
+    "name": "Australia",
+    "slug": "australia",
+    "flag": "🇦🇺",
+    "flagCode": "au",
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=700&h=500&fit=crop&q=80",
+    "badge": "Most Popular",
+    "badgeColor": "bg-amber-400/90 text-amber-900",
+    "tagline": "World-class universities with post-study work rights",
+    "description": "World-class education, post-study work rights of up to 4 years, and vibrant student life in Sydney, Melbourne & Brisbane. Strong STEM focus with industry connections.",
+    "longDescription": "Australia is the third most popular destination for international students globally. With 43 universities and a strong emphasis on research and practical skills, Australian qualifications are recognised worldwide. The country offers a multicultural environment, excellent quality of life, and one of the most generous post-study work visa regimes.",
+    "currency": "AUD",
+    "capital": "Canberra",
+    "studentVisaType": "Subclass 500",
+    "averageTuitionRange": {
+      "undergraduate": "AUD 20,000 – 45,000/year",
+      "postgraduate": "AUD 22,000 – 50,000/year"
+    },
+    "averageLivingCost": "AUD 21,041/year (government requirement)",
+    "partnerUniversities": 45,
+    "studentsPlaced": 800,
+    "postStudyWork": "2–4 years (Graduate Visa Subclass 485)",
+    "intakes": ["February", "July"],
+    "englishRequirements": {
+      "ielts": "6.0–6.5 overall (no band below 5.5)",
+      "pte": "50–58",
+      "toefl": "64–79"
+    },
+    "topUniversities": [
+      "University of Melbourne",
+      "Australian National University",
+      "University of Sydney",
+      "University of Queensland",
+      "UNSW Sydney",
+      "Monash University",
+      "RMIT University",
+      "Deakin University"
+    ],
+    "popularCourses": [
+      "Information Technology",
+      "Engineering",
+      "Business Administration",
+      "Nursing & Healthcare",
+      "Accounting & Finance",
+      "Early Childhood Education"
+    ],
+    "highlights": [
+      "No cap on international student visas",
+      "Work 48 hours per fortnight during studies",
+      "Spouse/partner can work full time",
+      "Clear PR pathways via skilled migration",
+      "Globally recognised qualifications"
+    ],
+    "scholarships": [
+      {
+        "name": "Australia Awards Scholarships",
+        "coverage": "Full tuition + living allowance",
+        "eligibility": "Nepali government/private sector professionals"
+      },
+      {
+        "name": "Destination Australia",
+        "coverage": "Up to AUD 15,000/year",
+        "eligibility": "Students studying in regional Australia"
+      },
+      {
+        "name": "University Merit Scholarships",
+        "coverage": "10–50% tuition waiver",
+        "eligibility": "High GPA and academic excellence"
+      }
+    ],
+    "processingTime": "4–8 weeks",
+    "color": "from-blue-600 to-cyan-500",
+    "featured": true,
+    "order": 1
+  },
+  {
+    "id": "uk",
+    "name": "United Kingdom",
+    "slug": "uk",
+    "flag": "🇬🇧",
+    "flagCode": "gb",
+    "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=700&h=500&fit=crop&q=80",
+    "badge": "1-Year Masters",
+    "badgeColor": "bg-blue-500/90 text-white",
+    "tagline": "Historic universities with shorter master's programs",
+    "description": "Historic universities like Oxford, Cambridge, LSE. Shorter 1-year master's programs and the Graduate Route visa for 2 years post-study.",
+    "longDescription": "The UK is home to some of the world's oldest and most prestigious universities. With over 160 higher education institutions, the UK offers exceptional academic programmes across all disciplines. The introduction of the Graduate Route visa has made the UK even more attractive for international students.",
+    "currency": "GBP",
+    "capital": "London",
+    "studentVisaType": "Student Visa (Tier 4)",
+    "averageTuitionRange": {
+      "undergraduate": "GBP 10,000 – 38,000/year",
+      "postgraduate": "GBP 11,000 – 30,000/year"
+    },
+    "averageLivingCost": "GBP 9,207–12,000/year",
+    "partnerUniversities": 38,
+    "studentsPlaced": 600,
+    "postStudyWork": "2 years (Graduate Route); 3 years for PhD graduates",
+    "intakes": ["September", "January"],
+    "englishRequirements": {
+      "ielts": "6.0–7.0 overall",
+      "pte": "51–65",
+      "toefl": "72–100"
+    },
+    "topUniversities": [
+      "University of Oxford",
+      "University of Cambridge",
+      "Imperial College London",
+      "London School of Economics",
+      "University College London",
+      "University of Edinburgh",
+      "King's College London",
+      "University of Manchester"
+    ],
+    "popularCourses": [
+      "MBA & Business Management",
+      "Law",
+      "Medicine & Healthcare",
+      "Engineering",
+      "Data Science & AI",
+      "Architecture"
+    ],
+    "highlights": [
+      "1-year master's programmes save time and money",
+      "Graduate Route visa: 2 years post-study work",
+      "Dependants allowed for courses 9+ months",
+      "Access to EU job markets via Northern Ireland",
+      "Part-time work: 20 hrs/week during term"
+    ],
+    "scholarships": [
+      {
+        "name": "Chevening Scholarships",
+        "coverage": "Full tuition + stipend + flights",
+        "eligibility": "Nepali professionals with 2+ years work experience"
+      },
+      {
+        "name": "Commonwealth Scholarships",
+        "coverage": "Full funding for master's and PhD",
+        "eligibility": "Outstanding academic merit"
+      },
+      {
+        "name": "GREAT Scholarships",
+        "coverage": "GBP 10,000 per year",
+        "eligibility": "Nepali students in selected subjects"
+      }
+    ],
+    "processingTime": "3–4 weeks",
+    "color": "from-blue-800 to-blue-600",
+    "featured": true,
+    "order": 2
+  },
+  {
+    "id": "canada",
+    "name": "Canada",
+    "slug": "canada",
+    "flag": "🇨🇦",
+    "flagCode": "ca",
+    "image": "https://images.unsplash.com/photo-1517090504332-eac2e94b4c60?w=700&h=500&fit=crop&q=80",
+    "badge": "PR Pathway",
+    "badgeColor": "bg-red-500/90 text-white",
+    "tagline": "Affordable education with clear PR pathways",
+    "description": "Affordable tuition, multicultural society, and a clear pathway to permanent residency through Express Entry and Provincial Nominee Programs.",
+    "longDescription": "Canada is consistently ranked among the world's best countries to live and work. Its education system is world-class and affordable compared to the US and UK. Canada's immigration-friendly policies make it the top choice for students seeking long-term settlement options.",
+    "currency": "CAD",
+    "capital": "Ottawa",
+    "studentVisaType": "Study Permit",
+    "averageTuitionRange": {
+      "undergraduate": "CAD 15,000 – 35,000/year",
+      "postgraduate": "CAD 13,000 – 32,000/year"
+    },
+    "averageLivingCost": "CAD 15,000 – 20,000/year",
+    "partnerUniversities": 32,
+    "studentsPlaced": 550,
+    "postStudyWork": "Up to 3 years (PGWP – Post-Graduate Work Permit)",
+    "intakes": ["January", "May", "September"],
+    "englishRequirements": {
+      "ielts": "6.0–6.5 overall",
+      "pte": "58–65",
+      "toefl": "80–90"
+    },
+    "topUniversities": [
+      "University of Toronto",
+      "McGill University",
+      "University of British Columbia",
+      "University of Waterloo",
+      "McMaster University",
+      "University of Alberta",
+      "Western University",
+      "Dalhousie University"
+    ],
+    "popularCourses": [
+      "Computer Science",
+      "Business & MBA",
+      "Environmental Science",
+      "Public Health",
+      "Artificial Intelligence",
+      "Hospitality Management"
+    ],
+    "highlights": [
+      "PGWP allows work in any field after graduation",
+      "Express Entry PR within 6 months of eligibility",
+      "Spouse/partner gets open work permit",
+      "Can work 20 hrs/week on campus (off campus from 2024: 24 hrs/week)",
+      "Provincial Nominee Programs (PNP) for PR"
+    ],
+    "scholarships": [
+      {
+        "name": "Vanier Canada Graduate Scholarships",
+        "coverage": "CAD 50,000/year for 3 years",
+        "eligibility": "Doctoral candidates with high academic standing"
+      },
+      {
+        "name": "Banting Postdoctoral Fellowships",
+        "coverage": "CAD 70,000/year",
+        "eligibility": "Postdoctoral researchers"
+      },
+      {
+        "name": "University Excellence Scholarships",
+        "coverage": "CAD 5,000 – 25,000",
+        "eligibility": "Merit-based, varies by institution"
+      }
+    ],
+    "processingTime": "8–12 weeks",
+    "color": "from-red-700 to-orange-500",
+    "featured": true,
+    "order": 3
+  },
+  {
+    "id": "usa",
+    "name": "United States",
+    "slug": "usa",
+    "flag": "🇺🇸",
+    "flagCode": "us",
+    "image": "https://images.unsplash.com/photo-1538332576228-eb5b4c4de6f5?w=700&h=500&fit=crop&q=80",
+    "badge": null,
+    "badgeColor": null,
+    "tagline": "Home to 50+ world top-100 universities",
+    "description": "Home to 50+ world top-100 universities. STEM OPT extension of up to 3 years. Strong research opportunities and campus diversity.",
+    "longDescription": "The United States remains the world's top destination for international students, boasting the largest number of top-ranked universities. US degrees carry global prestige, and STEM graduates benefit from extended OPT allowing them to work and gain US experience.",
+    "currency": "USD",
+    "capital": "Washington D.C.",
+    "studentVisaType": "F-1 Student Visa",
+    "averageTuitionRange": {
+      "undergraduate": "USD 20,000 – 55,000/year",
+      "postgraduate": "USD 18,000 – 60,000/year"
+    },
+    "averageLivingCost": "USD 10,000 – 18,000/year",
+    "partnerUniversities": 28,
+    "studentsPlaced": 400,
+    "postStudyWork": "1 year OPT; 3 years for STEM graduates",
+    "intakes": ["January", "August"],
+    "englishRequirements": {
+      "ielts": "6.5–7.0 overall",
+      "pte": "58–65",
+      "toefl": "80–100"
+    },
+    "topUniversities": [
+      "Massachusetts Institute of Technology",
+      "Stanford University",
+      "Harvard University",
+      "New York University",
+      "University of California, Berkeley",
+      "Columbia University",
+      "Carnegie Mellon University",
+      "Purdue University"
+    ],
+    "popularCourses": [
+      "Computer Science & Engineering",
+      "Data Science",
+      "Business Administration (MBA)",
+      "Medicine & Public Health",
+      "Film & Media",
+      "Finance & Economics"
+    ],
+    "highlights": [
+      "3-year STEM OPT extension",
+      "On-campus employment allowed from day one",
+      "World's largest research funding ecosystem",
+      "Campus Practical Training (CPT) during study",
+      "Diverse campuses across 50 states"
+    ],
+    "scholarships": [
+      {
+        "name": "Fulbright Foreign Student Program",
+        "coverage": "Full funding including tuition, stipend, health insurance",
+        "eligibility": "Nepali students for Master's and PhD"
+      },
+      {
+        "name": "Hubert Humphrey Fellowship",
+        "coverage": "Full funding for 10-month non-degree program",
+        "eligibility": "Mid-career Nepali professionals"
+      },
+      {
+        "name": "University Teaching Assistantships",
+        "coverage": "Full tuition waiver + monthly stipend",
+        "eligibility": "Graduate students with research focus"
+      }
+    ],
+    "processingTime": "4–8 weeks (embassy dependent)",
+    "color": "from-slate-800 to-slate-600",
+    "featured": true,
+    "order": 4
+  },
+  {
+    "id": "europe",
+    "name": "Europe",
+    "slug": "europe",
+    "flag": "🇪🇺",
+    "flagCode": "eu",
+    "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=700&h=500&fit=crop&q=80",
+    "badge": "Low Fees",
+    "badgeColor": "bg-green-500/90 text-white",
+    "tagline": "Tuition-free options across 27 EU countries",
+    "description": "Germany, Netherlands, France & Nordic countries offer low or zero tuition fees. English-taught programs. Schengen access to 27 countries.",
+    "longDescription": "Europe offers incredible diversity in education, language, and culture. Countries like Germany offer tuition-free education even for international students. The Schengen zone allows students to travel freely across 27 countries, and English-taught programmes are widely available.",
+    "currency": "EUR",
+    "capital": "Various",
+    "studentVisaType": "National D Visa / Schengen Visa",
+    "averageTuitionRange": {
+      "undergraduate": "EUR 0 – 20,000/year (country-dependent)",
+      "postgraduate": "EUR 0 – 25,000/year"
+    },
+    "averageLivingCost": "EUR 8,000 – 15,000/year",
+    "partnerUniversities": 22,
+    "studentsPlaced": 300,
+    "postStudyWork": "12–18 months job-seeker visa (varies by country)",
+    "intakes": ["October", "April"],
+    "englishRequirements": {
+      "ielts": "6.0–6.5 (English programmes)",
+      "pte": "50–58",
+      "toefl": "72–90",
+      "german": "TestDaF TDN 4 or DSH-2 (for German-taught)"
+    },
+    "topUniversities": [
+      "TU Munich (Germany)",
+      "Heidelberg University (Germany)",
+      "Delft University of Technology (Netherlands)",
+      "University of Amsterdam (Netherlands)",
+      "Paris Sciences et Lettres (France)",
+      "ETH Zurich (Switzerland)",
+      "KU Leuven (Belgium)",
+      "Uppsala University (Sweden)"
+    ],
+    "popularCourses": [
+      "Engineering & Technology",
+      "Environmental Science",
+      "Architecture & Design",
+      "Medicine (low-cost)",
+      "European Business",
+      "Political Science & International Relations"
+    ],
+    "highlights": [
+      "Germany: No tuition fees for all students",
+      "Schengen visa: travel 27 EU countries",
+      "DAAD & Erasmus scholarships widely available",
+      "Low cost of living compared to UK/Australia",
+      "Strong industry ties especially in engineering"
+    ],
+    "scholarships": [
+      {
+        "name": "DAAD Scholarships (Germany)",
+        "coverage": "EUR 934/month + tuition + travel",
+        "eligibility": "Nepali students for Master's & PhD"
+      },
+      {
+        "name": "Erasmus Mundus Joint Master's",
+        "coverage": "Full tuition + EUR 1,400/month",
+        "eligibility": "Exceptional academic record"
+      },
+      {
+        "name": "Orange Knowledge Programme (Netherlands)",
+        "coverage": "Full tuition + living costs",
+        "eligibility": "Mid-career Nepali professionals"
+      }
+    ],
+    "processingTime": "6–12 weeks",
+    "color": "from-emerald-700 to-teal-500",
+    "featured": true,
+    "order": 5
+  },
+  {
+    "id": "newzealand",
+    "name": "New Zealand",
+    "slug": "new-zealand",
+    "flag": "🇳🇿",
+    "flagCode": "nz",
+    "image": "https://images.unsplash.com/photo-1469521669194-babb45599def?w=700&h=500&fit=crop&q=80",
+    "badge": null,
+    "badgeColor": null,
+    "tagline": "Safe, scenic and student-friendly",
+    "description": "Safe, nature-rich country with high QS-ranked universities. Spouse open work permit and excellent post-study opportunities.",
+    "longDescription": "New Zealand offers a safe, welcoming environment with world-ranked universities. It is known for its stunning landscapes, high quality of life, and progressive student policies. The Post-Study Work Visa allows graduates to work anywhere in New Zealand for up to 3 years.",
+    "currency": "NZD",
+    "capital": "Wellington",
+    "studentVisaType": "Student Visa",
+    "averageTuitionRange": {
+      "undergraduate": "NZD 22,000 – 32,000/year",
+      "postgraduate": "NZD 26,000 – 37,000/year"
+    },
+    "averageLivingCost": "NZD 15,000 – 20,000/year",
+    "partnerUniversities": 16,
+    "studentsPlaced": 200,
+    "postStudyWork": "Up to 3 years (Post-Study Work Visa)",
+    "intakes": ["February", "July"],
+    "englishRequirements": {
+      "ielts": "6.0–6.5 overall",
+      "pte": "50–58",
+      "toefl": "79–90"
+    },
+    "topUniversities": [
+      "University of Auckland",
+      "University of Otago",
+      "Victoria University of Wellington",
+      "Massey University",
+      "Canterbury University",
+      "AUT University"
+    ],
+    "popularCourses": [
+      "Agriculture & Horticulture",
+      "Nursing & Health Sciences",
+      "Tourism & Hospitality",
+      "Engineering",
+      "Information Technology",
+      "Film & Creative Arts"
+    ],
+    "highlights": [
+      "Spouse/partner gets open work permit",
+      "Work 20 hrs/week during study",
+      "8 world top-500 universities in one small country",
+      "One of the world's safest countries",
+      "PR possible after 2 years of skilled work"
+    ],
+    "scholarships": [
+      {
+        "name": "New Zealand Aid Programme",
+        "coverage": "Full tuition + living allowance + flights",
+        "eligibility": "Nepali government-nominated candidates"
+      },
+      {
+        "name": "University of Auckland International Excellence",
+        "coverage": "NZD 10,000",
+        "eligibility": "Merit-based for new students"
+      }
+    ],
+    "processingTime": "4–6 weeks",
+    "color": "from-teal-700 to-cyan-500",
+    "featured": false,
+    "order": 6
+  },
+  {
+    "id": "japan",
+    "name": "Japan",
+    "slug": "japan",
+    "flag": "🇯🇵",
+    "flagCode": "jp",
+    "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=700&h=500&fit=crop&q=80",
+    "badge": "Growing",
+    "badgeColor": "bg-pink-500/90 text-white",
+    "tagline": "Technology, innovation and MEXT scholarships",
+    "description": "Cutting-edge technology, robotics, and engineering programs. MEXT government scholarships available. Unique cultural experience.",
+    "longDescription": "Japan offers unique academic experiences combining cutting-edge technology with rich cultural heritage. Japanese universities excel in engineering, robotics, and technology. The MEXT scholarship is one of the most prestigious and fully-funded scholarships available to Nepali students.",
+    "currency": "JPY",
+    "capital": "Tokyo",
+    "studentVisaType": "Student Visa (留学)",
+    "averageTuitionRange": {
+      "undergraduate": "JPY 535,800/year (national); JPY 900,000–1,200,000 (private)",
+      "postgraduate": "JPY 535,800/year (national); JPY 1,000,000–1,500,000 (private)"
+    },
+    "averageLivingCost": "JPY 900,000 – 1,200,000/year",
+    "partnerUniversities": 10,
+    "studentsPlaced": 120,
+    "postStudyWork": "Designated Activities Visa (up to 2 years for job hunting)",
+    "intakes": ["April", "September"],
+    "englishRequirements": {
+      "ielts": "6.0 (English programmes)",
+      "toefl": "72",
+      "japanese": "JLPT N2 (for Japanese-taught programmes)"
+    },
+    "topUniversities": [
+      "University of Tokyo",
+      "Kyoto University",
+      "Osaka University",
+      "Tohoku University",
+      "Tokyo Institute of Technology",
+      "Waseda University"
+    ],
+    "popularCourses": [
+      "Robotics & Automation",
+      "Electrical Engineering",
+      "Computer Science",
+      "International Business",
+      "Japanese Language & Culture",
+      "Architecture & Design"
+    ],
+    "highlights": [
+      "MEXT scholarship: full funding from Japanese government",
+      "World leader in engineering and robotics",
+      "Extremely safe country",
+      "Part-time work allowed: 28 hrs/week",
+      "Rich cultural and networking opportunities"
+    ],
+    "scholarships": [
+      {
+        "name": "MEXT (Monbukagakusho) Scholarship",
+        "coverage": "Full tuition + JPY 117,000–145,000/month + flights",
+        "eligibility": "Nepali students under 35 with strong academics"
+      },
+      {
+        "name": "JASSO Scholarship",
+        "coverage": "JPY 48,000/month",
+        "eligibility": "Students with excellent academic performance"
+      }
+    ],
+    "processingTime": "8–12 weeks",
+    "color": "from-pink-700 to-rose-500",
+    "featured": false,
+    "order": 7
+  },
+  {
+    "id": "ireland",
+    "name": "Ireland",
+    "slug": "ireland",
+    "flag": "🇮🇪",
+    "flagCode": "ie",
+    "image": "https://images.unsplash.com/photo-1564959130747-897fb406b9af?w=700&h=500&fit=crop&q=80",
+    "badge": null,
+    "badgeColor": null,
+    "tagline": "English-speaking EU gateway for tech careers",
+    "description": "English-speaking EU country. Home to tech giants (Google, Meta, Apple). 2-year Stay Back visa for graduates. Gateway to EU.",
+    "longDescription": "Ireland is the only English-speaking country remaining in the European Union after Brexit. It has become the European HQ for many tech giants including Google, Meta, Apple, and LinkedIn, creating outstanding employment opportunities for graduates.",
+    "currency": "EUR",
+    "capital": "Dublin",
+    "studentVisaType": "Study Visa (Stamp 2)",
+    "averageTuitionRange": {
+      "undergraduate": "EUR 10,000 – 25,000/year",
+      "postgraduate": "EUR 9,000 – 30,000/year"
+    },
+    "averageLivingCost": "EUR 9,000 – 14,000/year",
+    "partnerUniversities": 12,
+    "studentsPlaced": 150,
+    "postStudyWork": "2 years (Third Level Graduate Programme – Stamp 1G)",
+    "intakes": ["September", "January"],
+    "englishRequirements": {
+      "ielts": "6.0–6.5 overall",
+      "pte": "51–58",
+      "toefl": "79–90"
+    },
+    "topUniversities": [
+      "Trinity College Dublin",
+      "University College Dublin",
+      "University College Cork",
+      "National University of Ireland Galway",
+      "Dublin City University",
+      "Maynooth University"
+    ],
+    "popularCourses": [
+      "Computer Science & Software Engineering",
+      "Pharmaceutical Science",
+      "Business & Finance",
+      "Data Analytics",
+      "Cybersecurity",
+      "Nursing"
+    ],
+    "highlights": [
+      "Only English-speaking EU member state",
+      "European HQ of Google, Meta, Apple, LinkedIn",
+      "2-year stay-back visa after graduation",
+      "Gateway to EU job market",
+      "Work 20 hrs/week during study, 40 hrs in holidays"
+    ],
+    "scholarships": [
+      {
+        "name": "Government of Ireland International Education Scholarships",
+        "coverage": "EUR 10,000 per year",
+        "eligibility": "Exceptional students from non-EU countries"
+      },
+      {
+        "name": "Irish Research Council Scholarships",
+        "coverage": "EUR 16,000/year + tuition",
+        "eligibility": "Postgraduate research students"
+      }
+    ],
+    "processingTime": "4–8 weeks",
+    "color": "from-green-700 to-emerald-500",
+    "featured": false,
+    "order": 8
+  }
+]

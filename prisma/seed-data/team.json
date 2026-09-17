@@ -1,0 +1,169 @@
+[
+  {
+    "id": "rajesh-acharya",
+    "name": "Rajesh Acharya",
+    "role": "Founder & Chief Counselor",
+    "department": "Leadership",
+    "experience": "18 years",
+    "specialisation": ["Australia", "UK", "Scholarship Guidance"],
+    "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop",
+    "bio": "Rajesh founded Summit Abroad in 2010 after completing his own master's degree in Australia. He holds QEAC certification and has personally counseled over 1,000 students. His expertise spans Australian Subclass 500 visas and UK student visa applications.",
+    "qualifications": [
+      "M.Sc. International Education Management, University of Melbourne",
+      "QEAC (Qualified Education Agent Counsellor) — Australia",
+      "ECAN Certified Education Counsellor"
+    ],
+    "languages": ["Nepali", "English", "Hindi"],
+    "studiedIn": "Australia",
+    "linkedIn": "#",
+    "email": "rajesh@summitabroad.edu.np",
+    "isFeatured": true,
+    "order": 1
+  },
+  {
+    "id": "sita-karki",
+    "name": "Sita Karki",
+    "role": "Head of Visa Division",
+    "department": "Visa",
+    "experience": "12 years",
+    "specialisation": ["Canada", "USA", "Visa Documentation"],
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop",
+    "bio": "Sita leads our visa team with a meticulous approach to documentation that has resulted in a 98% visa success rate. She specialises in Canadian Study Permits and US F-1 visas, with deep expertise in financial documentation and GTE writing.",
+    "qualifications": [
+      "B.A. English Literature, Tribhuvan University",
+      "Immigration Law Certificate, Kathmandu School of Law",
+      "RCIC Associate Member (Canada)"
+    ],
+    "languages": ["Nepali", "English"],
+    "studiedIn": "Nepal",
+    "linkedIn": "#",
+    "email": "sita@summitabroad.edu.np",
+    "isFeatured": true,
+    "order": 2
+  },
+  {
+    "id": "manish-poudel",
+    "name": "Manish Poudel",
+    "role": "Senior Education Counselor",
+    "department": "Counseling",
+    "experience": "10 years",
+    "specialisation": ["Europe", "New Zealand", "DAAD Scholarships"],
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
+    "bio": "Manish studied engineering in Germany and brings firsthand knowledge of the European education system. He specialises in German university applications, APS certification, and TestDaF coaching — having guided 300+ students to European institutions.",
+    "qualifications": [
+      "M.Eng. Civil Engineering, TU Munich",
+      "TestDaF Level C1 Certified",
+      "ECAN Certified Education Counsellor"
+    ],
+    "languages": ["Nepali", "English", "German"],
+    "studiedIn": "Germany",
+    "linkedIn": "#",
+    "email": "manish@summitabroad.edu.np",
+    "isFeatured": true,
+    "order": 3
+  },
+  {
+    "id": "anita-tamang",
+    "name": "Anita Tamang",
+    "role": "IELTS Lead Instructor",
+    "department": "Test Preparation",
+    "experience": "8 years",
+    "specialisation": ["IELTS Academic", "IELTS General", "PTE Academic"],
+    "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop",
+    "bio": "Anita is a PIER-accredited IELTS instructor with an IELTS score of 8.5. She has trained over 2,000 students and consistently achieves above-target band scores with her students. Her writing correction methodology is particularly recognised among students.",
+    "qualifications": [
+      "M.A. English Language Teaching, Kathmandu University",
+      "PIER Accredited IELTS Trainer",
+      "Cambridge CELTA Certified",
+      "IELTS Score: 8.5 overall"
+    ],
+    "languages": ["Nepali", "English"],
+    "studiedIn": "Nepal",
+    "linkedIn": "#",
+    "email": "anita@summitabroad.edu.np",
+    "isFeatured": true,
+    "order": 4
+  },
+  {
+    "id": "bikash-thapa",
+    "name": "Bikash Thapa",
+    "role": "Education Counselor",
+    "department": "Counseling",
+    "experience": "6 years",
+    "specialisation": ["UK", "Ireland", "Postgraduate Applications"],
+    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
+    "bio": "Bikash studied in the UK and specialises in postgraduate and MBA applications to UK and Irish universities. He has strong relationships with admissions offices at over 20 UK universities and regularly attends university education fairs on behalf of students.",
+    "qualifications": [
+      "MBA, University of Exeter",
+      "B.Sc. Business Management, Pokhara University",
+      "ECAN Certified Education Counsellor"
+    ],
+    "languages": ["Nepali", "English"],
+    "studiedIn": "UK",
+    "linkedIn": "#",
+    "email": "bikash@summitabroad.edu.np",
+    "isFeatured": false,
+    "order": 5
+  },
+  {
+    "id": "priya-rana",
+    "name": "Priya Rana",
+    "role": "Admissions Coordinator",
+    "department": "Admissions",
+    "experience": "5 years",
+    "specialisation": ["Application Processing", "Document Verification", "SOP Editing"],
+    "image": "https://images.unsplash.com/photo-1586297135537-94bc81ba6e5c?w=200&h=200&fit=crop",
+    "bio": "Priya coordinates all university application submissions and ensures every student file is complete and compelling. She has edited over 500 SOPs and is known for her eagle-eye attention to detail and quick turnaround time.",
+    "qualifications": [
+      "B.A. Mass Communication, Kathmandu University",
+      "Certificate in Academic Writing, British Council"
+    ],
+    "languages": ["Nepali", "English"],
+    "studiedIn": "Nepal",
+    "linkedIn": "#",
+    "email": "priya@summitabroad.edu.np",
+    "isFeatured": false,
+    "order": 6
+  },
+  {
+    "id": "suraj-magar",
+    "name": "Suraj Magar",
+    "role": "PTE & SAT Instructor",
+    "department": "Test Preparation",
+    "experience": "5 years",
+    "specialisation": ["PTE Academic", "SAT", "GRE"],
+    "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&h=200&fit=crop",
+    "bio": "Suraj is a PTE Expert certified trainer with a PTE score of 88. He specialises in the computer-based English tests and has an exceptional record of getting students to their target PTE scores within a single preparation cycle.",
+    "qualifications": [
+      "B.E. Computer Engineering, IOE Pulchowk",
+      "PTE Expert Certified Trainer",
+      "PTE Academic Score: 88/90"
+    ],
+    "languages": ["Nepali", "English"],
+    "studiedIn": "Nepal",
+    "linkedIn": "#",
+    "email": "suraj@summitabroad.edu.np",
+    "isFeatured": false,
+    "order": 7
+  },
+  {
+    "id": "luna-shrestha",
+    "name": "Luna Shrestha",
+    "role": "Student Support Officer",
+    "department": "Student Services",
+    "experience": "4 years",
+    "specialisation": ["Pre-departure Support", "Alumni Network", "Post-arrival Guidance"],
+    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop",
+    "bio": "Luna manages all pre-departure orientations and maintains the Summit Abroad alumni network across 15 countries. She is the first point of contact for students after arrival and coordinates with on-ground alumni to ensure a smooth transition.",
+    "qualifications": [
+      "B.Sc. Psychology, Tribhuvan University",
+      "Certificate in Cross-Cultural Communication"
+    ],
+    "languages": ["Nepali", "English", "Hindi"],
+    "studiedIn": "Nepal",
+    "linkedIn": "#",
+    "email": "luna@summitabroad.edu.np",
+    "isFeatured": false,
+    "order": 8
+  }
+]

@@ -1,0 +1,137 @@
+{
+  "name": "Kingsland Abroad Education Consultancy",
+  "shortName": "Kingsland Abroad",
+  "tagline": "Your Gateway to Global Education",
+  "description": "Nepal's premier education consultancy guiding ambitious students to world-class universities in Australia, UK, Canada, USA, Europe and beyond since 2010.",
+  "founded": 2010,
+  "yearsOfExperience": 14,
+  "logo": {
+    "initial": "S",
+    "gradientFrom": "#2563eb",
+    "gradientTo": "#dc2626"
+  },
+  "registration": {
+    "companyType": "Private Limited",
+    "registrationNumber": "12345/070/071",
+    "panNumber": "600123456",
+    "vatNumber": "600123456",
+    "registeredWith": "Office of the Company Registrar, Nepal"
+  },
+  "contact": {
+    "phone": {
+      "primary": "+977-1-4444444",
+      "secondary": "+977-9851234567",
+      "whatsapp": "+9779851234567",
+      "viber": "+9779851234567"
+    },
+    "email": {
+      "general": "info@kingsland.edu.np",
+      "visa": "visa@kingsland.edu.np",
+      "ielts": "ielts@kingsland.edu.np",
+      "admissions": "admissions@kingsland.edu.np"
+    },
+    "website": "https://www.kingsland.edu.np"
+  },
+  "address": {
+    "street": "Dillibazar Road",
+    "landmark": "Near City Centre Mall",
+    "ward": "Ward No. 31",
+    "municipality": "Kathmandu Metropolitan City",
+    "district": "Kathmandu",
+    "province": "Bagmati Province",
+    "country": "Nepal",
+    "postalCode": "44600",
+    "googleMapsUrl": "https://maps.google.com/?q=Dillibazar,Kathmandu,Nepal",
+    "coordinates": {
+      "lat": 27.7099,
+      "lng": 85.3247
+    }
+  },
+  "officeHours": {
+    "sunday": "8:00 AM – 6:00 PM",
+    "monday": "8:00 AM – 6:00 PM",
+    "tuesday": "8:00 AM – 6:00 PM",
+    "wednesday": "8:00 AM – 6:00 PM",
+    "thursday": "8:00 AM – 6:00 PM",
+    "friday": "8:00 AM – 6:00 PM",
+    "saturday": "9:00 AM – 3:00 PM",
+    "publicHolidays": "Closed",
+    "note": "Walk-ins welcome. Appointment recommended for visa consultations."
+  },
+  "socialMedia": {
+    "facebook": "https://facebook.com/kingsland",
+    "instagram": "https://instagram.com/kingsland",
+    "youtube": "https://youtube.com/@kingsland",
+    "linkedin": "https://linkedin.com/company/kingsland",
+    "tiktok": "https://tiktok.com/@kingsland",
+    "twitter": "https://twitter.com/kingsland"
+  },
+  "certifications": [
+    {
+      "id": "ecan",
+      "name": "ECAN Member",
+      "fullName": "Education Counsellors Association of Nepal",
+      "year": 2012,
+      "description": "Full member of Nepal's leading education counsellors body"
+    },
+    {
+      "id": "iso",
+      "name": "ISO 9001:2015",
+      "fullName": "International Organization for Standardization",
+      "year": 2018,
+      "description": "Quality Management System certified"
+    },
+    {
+      "id": "qeac",
+      "name": "QEAC Certified",
+      "fullName": "Qualified Education Agent Counsellors",
+      "year": 2016,
+      "description": "Australian government-endorsed counsellor certification"
+    },
+    {
+      "id": "british-council",
+      "name": "British Council",
+      "fullName": "British Council Approved Partner",
+      "year": 2015,
+      "description": "Official partner of the British Council Nepal"
+    },
+    {
+      "id": "pier",
+      "name": "PIER Accredited",
+      "fullName": "Preparation for IELTS Education and Resources",
+      "year": 2017,
+      "description": "Accredited IELTS preparation centre"
+    }
+  ],
+  "stats": {
+    "studentsPlaced": 2500,
+    "partnerUniversities": 150,
+    "countriesCovered": 15,
+    "visaSuccessRate": 98,
+    "yearsOfExperience": 14,
+    "scholarshipsSecured": 320,
+    "ieltsStudentsTrained": 5000,
+    "averageIeltsBand": 7.2,
+    "officeLocations": 1
+  },
+  "awards": [
+    {
+      "id": "top-consultancy-2024",
+      "title": "Top Education Consultancy Award",
+      "issuer": "Nepal Education Awards",
+      "year": 2024
+    },
+    {
+      "id": "best-ielts-2023",
+      "title": "Best IELTS Coaching Centre",
+      "issuer": "Kathmandu Education Forum",
+      "year": 2023
+    },
+    {
+      "id": "excellence-2022",
+      "title": "Excellence in Student Counseling",
+      "issuer": "ECAN Annual Awards",
+      "year": 2022
+    }
+  ]
+}

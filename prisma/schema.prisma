@@ -1,0 +1,150 @@
+generator client {
+  provider     = "prisma-client"
+  output       = "../lib/generated/prisma"
+  engineType   = "client"
+  moduleFormat = "cjs"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  SUPER_ADMIN
+  ADMIN
+  EDITOR
+  SUPPORT
+}
+
+model AdminUser {
+  id                String    @id @default(uuid())
+  email             String    @unique
+  name              String
+  passwordHash      String
+  role              Role      @default(ADMIN)
+  resetTokenHash    String?   @unique
+  resetTokenExpiry  DateTime?
+  createdAt         DateTime  @default(now())
+
+  @@map("admin_users")
+}
+
+model Lead {
+  id          String   @id @default(uuid())
+  name        String
+  email       String
+  phone       String
+  destination String?
+  service     String?
+  message     String?
+  status      String   @default("new")
+  source      String   @default("contact-form")
+  createdAt   DateTime @default(now())
+
+  @@map("leads")
+  @@index([status])
+  @@index([createdAt])
+}
+
+model NewsletterSubscriber {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+
+  @@map("newsletter_subscribers")
+}
+
+model BlogPost {
+  id         String   @id @default(uuid())
+  slug       String   @unique
+  title      String
+  excerpt    String   @default("")
+  content    String
+  coverImage String   @default("")
+  author     String   @default("Kingsland Abroad Team")
+  tags       String[] @default([])
+  published  Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@map("blog_posts")
+  @@index([published])
+}
+
+// Testimonials, Destinations, and Services keep their existing rich,
+// presentation-heavy shape (many optional fields used only by the
+// frontend). Rather than hand-mapping every field to a column, each row
+// stores its full record as JSON, while `id`/`slug` stay real indexed
+// columns so lookups, uniqueness, and ordering still work at the DB level.
+
+model Testimonial {
+  id        String   @id
+  name      String
+  featured  Boolean  @default(false)
+  approved  Boolean  @default(true) // admin-created testimonials are auto-approved; public submissions default to false
+  order     Int      @default(0)
+  data      Json
+  createdAt DateTime @default(now())
+
+  @@map("testimonials")
+}
+
+model Destination {
+  id        String   @id
+  slug      String   @unique
+  name      String
+  data      Json
+  createdAt DateTime @default(now())
+
+  @@map("destinations")
+}
+
+model Service {
+  id        String   @id
+  slug      String   @unique
+  title     String
+  data      Json
+  createdAt DateTime @default(now())
+
+  @@map("services")
+}
+
+model FAQ {
+  id        String   @id @default(uuid())
+  category  String   @default("General")
+  order     Int      @default(0)
+  data      Json
+  createdAt DateTime @default(now())
+
+  @@map("faqs")
+}
+
+model TeamMember {
+  id        String   @id
+  name      String
+  order     Int      @default(0)
+  data      Json
+  createdAt DateTime @default(now())
+
+  @@map("team_members")
+}
+
+// Singleton, site-wide JSON blobs — one row per key ("company", "site-config").
+model SiteContent {
+  key       String   @id
+  data      Json
+  updatedAt DateTime @updatedAt
+
+  @@map("site_content")
+}
+
+model GalleryImage {
+  id        String   @id @default(uuid())
+  src       String
+  alt       String   @default("")
+  size      String   @default("normal") // "normal" | "wide" | "tall" — layout hint for the masonry grid
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+
+  @@map("gallery_images")
+}

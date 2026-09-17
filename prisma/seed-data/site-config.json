@@ -1,0 +1,212 @@
+{
+  "navigation": {
+    "main": [
+      {
+        "href": "/",
+        "label": "Home",
+        "exact": true
+      },
+      {
+        "href": "/destinations",
+        "label": "Destinations"
+      },
+      {
+        "href": "/services",
+        "label": "Services"
+      },
+      {
+        "href": "/test-prep",
+        "label": "Test Prep"
+      },
+      {
+        "href": "/success-stories",
+        "label": "Success Stories"
+      },
+      {
+        "href": "/about",
+        "label": "About"
+      },
+      {
+        "href": "/contact",
+        "label": "Contact"
+      }
+    ],
+    "footer": {
+      "quickLinks": [
+        {
+          "href": "/",
+          "label": "Home"
+        },
+        {
+          "href": "/destinations",
+          "label": "Study Destinations"
+        },
+        {
+          "href": "/services",
+          "label": "Our Services"
+        },
+        {
+          "href": "/test-prep",
+          "label": "Test Preparation"
+        },
+        {
+          "href": "/success-stories",
+          "label": "Success Stories"
+        },
+        {
+          "href": "/blog",
+          "label": "Blog"
+        },
+        {
+          "href": "/about",
+          "label": "About Us"
+        },
+        {
+          "href": "/contact",
+          "label": "Contact Us"
+        }
+      ],
+      "legal": [
+        {
+          "href": "/privacy-policy",
+          "label": "Privacy Policy"
+        },
+        {
+          "href": "/terms-of-service",
+          "label": "Terms of Service"
+        }
+      ]
+    },
+    "cta": {
+      "label": "Free Consultation",
+      "href": "/contact"
+    }
+  },
+  "seo": {
+    "defaultTitle": "Summit Abroad — Your Gateway to Global Education",
+    "titleTemplate": "%s | Summit Abroad",
+    "defaultDescription": "Nepal's premier education consultancy guiding ambitious students to world-class universities in Australia, UK, Canada, USA & Europe since 2010.",
+    "defaultKeywords": [
+      "education consultancy Nepal",
+      "study abroad Nepal",
+      "study in Australia from Nepal",
+      "study in UK from Nepal",
+      "study in Canada from Nepal",
+      "IELTS coaching Kathmandu",
+      "PTE coaching Nepal",
+      "visa assistance Nepal",
+      "scholarship guidance Nepal",
+      "Kathmandu education consultancy"
+    ],
+    "ogImage": "/og-image.jpg",
+    "twitterHandle": "@summitabroad"
+  },
+  "pages": {
+    "home": {
+      "title": "Summit Abroad — Your Gateway to Global Education",
+      "description": "Nepal's premier education consultancy since 2010. Free counseling, IELTS coaching, visa assistance and scholarship guidance."
+    },
+    "destinations": {
+      "title": "Study Destinations",
+      "description": "Explore 8 top study destinations — Australia, UK, Canada, USA, Europe, New Zealand, Japan & Ireland."
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "End-to-end education services from free counseling to visa approval."
+    },
+    "testPrep": {
+      "title": "Test Preparation",
+      "description": "IELTS, PTE, SAT, GRE & GMAT coaching with band guarantees."
+    },
+    "successStories": {
+      "title": "Success Stories",
+      "description": "Real stories of Nepali students placed in top universities worldwide."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "Learn about Summit Abroad — Nepal's most trusted education consultancy."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Book a free counseling session at our Kathmandu office or reach us online."
+    }
+  },
+  "stats": [
+    {
+      "id": "years",
+      "value": 14,
+      "suffix": "+",
+      "label": "Years of Excellence",
+      "icon": "Star",
+      "accent": false
+    },
+    {
+      "id": "students",
+      "value": 2500,
+      "suffix": "+",
+      "label": "Students Placed",
+      "icon": "GraduationCap",
+      "accent": false
+    },
+    {
+      "id": "visa",
+      "value": 98,
+      "suffix": "%",
+      "label": "Visa Success Rate",
+      "icon": "ShieldCheck",
+      "accent": true
+    },
+    {
+      "id": "universities",
+      "value": 150,
+      "suffix": "+",
+      "label": "Partner Universities",
+      "icon": "Building2",
+      "accent": false
+    },
+    {
+      "id": "countries",
+      "value": 15,
+      "suffix": "+",
+      "label": "Countries Covered",
+      "icon": "Globe",
+      "accent": false
+    }
+  ],
+  "certifications": [
+    {
+      "id": "ecan",
+      "name": "ECAN Member"
+    },
+    {
+      "id": "iso",
+      "name": "ISO 9001:2015"
+    },
+    {
+      "id": "qeac",
+      "name": "QEAC Certified"
+    },
+    {
+      "id": "british-council",
+      "name": "British Council"
+    }
+  ],
+  "partnerUniversities": [
+    "University of Melbourne",
+    "Imperial College London",
+    "University of Toronto",
+    "TU Munich",
+    "NYU",
+    "University of Sydney",
+    "McGill University",
+    "University of Auckland",
+    "National University Singapore",
+    "ETH Zurich",
+    "University of Edinburgh",
+    "Monash University",
+    "UBC Vancouver",
+    "King's College London",
+    "University of Glasgow",
+    "RMIT University"
+  ]
+}

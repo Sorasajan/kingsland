@@ -1,0 +1,98 @@
+[
+  {
+    "id": "faq-001",
+    "category": "General",
+    "question": "How much does it cost to use kingsland Abroad's services?",
+    "answer": "Our career counseling is completely free and unlimited. Application processing, visa assistance, and test prep coaching have separate service fees based on the package. We are transparent about all costs upfront — no hidden charges. Contact us for a detailed fee structure.",
+    "tags": ["cost", "fees", "free", "pricing"],
+    "order": 1
+  },
+  {
+    "id": "faq-002",
+    "category": "Test Preparation",
+    "question": "What IELTS band score do I need to study abroad?",
+    "answer": "Most universities require an overall band of 6.0–6.5 for undergraduate and 6.5–7.0 for postgraduate programs. Some UK and Australian universities accept 5.5 with conditions (pathway programmes). Requirements vary by university, course, and country. We will give you a precise requirement based on your shortlisted universities.",
+    "tags": ["IELTS", "band score", "english requirements"],
+    "order": 2
+  },
+  {
+    "id": "faq-003",
+    "category": "Visa",
+    "question": "How long does the visa process take?",
+    "answer": "Processing times vary by country: Australia (Subclass 500) takes 4–8 weeks, UK Student Visa takes 3–4 weeks, Canada Study Permit takes 8–12 weeks, and US F-1 visa depends on the embassy appointment schedule (often 2–4 months). We advise starting the entire process at least 6–8 months before your intended intake.",
+    "tags": ["visa", "processing time", "timeline"],
+    "order": 3
+  },
+  {
+    "id": "faq-004",
+    "category": "Scholarships",
+    "question": "Can I get a scholarship through kingsland Abroad?",
+    "answer": "Yes! We actively identify and support applications for scholarships. These include merit-based university scholarships, government scholarships (Chevening, Australia Awards, MEXT, DAAD, Fulbright), and external scholarship programs. Our students have secured scholarships ranging from partial tuition reduction to 100% tuition waiver. We have helped secure over NPR 40 crore in scholarships to date.",
+    "tags": ["scholarship", "funding", "financial aid"],
+    "order": 4
+  },
+  {
+    "id": "faq-005",
+    "category": "Test Preparation",
+    "question": "Do I need IELTS for all countries?",
+    "answer": "IELTS is accepted everywhere but not always mandatory. Germany and many European countries accept TestDaF or Goethe certificate for German-taught programs. Japan requires JLPT for Japanese-taught courses. Some universities accept institutional English tests or waive requirements for students from English-medium schools with minimum 60% in English. We will advise what is most strategic for your specific situation.",
+    "tags": ["IELTS", "english test", "language requirements", "PTE", "TOEFL"],
+    "order": 5
+  },
+  {
+    "id": "faq-006",
+    "category": "General",
+    "question": "Is it safe to study abroad as a Nepali student?",
+    "answer": "Absolutely. Countries like Australia, UK, Canada, and New Zealand consistently rank among the safest in the world for international students. They have strong anti-discrimination laws, student support centres on every campus, dedicated international student offices, and active Nepali diaspora communities. We provide a pre-departure orientation covering safety, cultural adjustment, and emergency resources, and connect you with our alumni network in your destination city.",
+    "tags": ["safety", "student life", "international students"],
+    "order": 6
+  },
+  {
+    "id": "faq-007",
+    "category": "Test Preparation",
+    "question": "What is the difference between PTE and IELTS?",
+    "answer": "Both are English proficiency tests but with key differences. PTE Academic is fully computer-based with AI scoring and results within 5 business days, making it popular for Australia and New Zealand student visa applications. IELTS has a human examiner for the speaking component and takes 13 days for results. PTE is generally preferred for Australian student visas as the AI scoring tends to be more consistent. We will recommend the better option based on your strengths and destination.",
+    "tags": ["PTE", "IELTS", "english test", "comparison"],
+    "order": 7
+  },
+  {
+    "id": "faq-008",
+    "category": "Visa",
+    "question": "Can I bring my family while studying abroad?",
+    "answer": "Rules vary by country: UK allows partners and dependants for postgraduate programmes of 9+ months. Canada allows spouses to apply for an open work permit for full-time students at eligible DLIs. Australia allows partners but requires separate Tourist or Partner visa applications. New Zealand allows partners. We provide complete guidance on family visa applications for all destinations.",
+    "tags": ["family", "dependants", "spouse", "visa"],
+    "order": 8
+  },
+  {
+    "id": "faq-009",
+    "category": "Application",
+    "question": "How early should I start my application process?",
+    "answer": "We recommend starting at least 12 months before your intended intake. This allows time for: IELTS/PTE coaching (6–12 weeks), gathering documents and transcripts (4–8 weeks), SOP and application preparation (4–6 weeks), waiting for offer letters (2–8 weeks), visa application processing (3–12 weeks), and pre-departure preparation. The earlier you start, the more options you have.",
+    "tags": ["timeline", "application", "planning"],
+    "order": 9
+  },
+  {
+    "id": "faq-010",
+    "category": "Application",
+    "question": "What documents do I need to apply abroad?",
+    "answer": "Core documents typically include: Academic transcripts and certificates (from SLC to latest), Character certificates, IELTS/PTE/TOEFL scorecard, Passport (valid for 2+ years), Work experience letters (if applicable), Bank statements (3–6 months), SOP (Statement of Purpose), CV/Resume, LOR (Letters of Recommendation), and Passport-size photos. Requirements vary by university and country. We provide a personalised document checklist for every student.",
+    "tags": ["documents", "requirements", "application"],
+    "order": 10
+  },
+  {
+    "id": "faq-011",
+    "category": "Visa",
+    "question": "My visa was refused before. Can kingsland Abroad help me reapply?",
+    "answer": "Yes, and we have an excellent track record with re-applications. We conduct a thorough analysis of the refusal reason, identify weaknesses in the previous application, and build a significantly stronger case for reapplication. Many of our successful students came to us after refusals with other agencies or through self-application. Please bring your original refusal letter for a free review.",
+    "tags": ["visa refusal", "reapplication", "refused visa"],
+    "order": 11
+  },
+  {
+    "id": "faq-012",
+    "category": "General",
+    "question": "Do you have connections with specific universities?",
+    "answer": "Yes. We have signed agreements and direct partnerships with 150+ universities across 15 countries. These partnerships mean we have direct access to admissions officers, can fast-track applications for eligible students, receive updated intake information before it is publicly announced, and sometimes access special scholarship rounds exclusive to our partner network.",
+    "tags": ["university partnerships", "admissions", "connections"],
+    "order": 12
+  }
+]

@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', sans-serif;
+    --font-playfair: 'Playfair Display', serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-slate-700 antialiased;
+  }
+}
+
+@layer components {
+  .glass-nav {
+    @apply bg-white/90 backdrop-blur-xl;
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, #f0f7ff 0%, #e8f4fd 35%, #fdf0f0 70%, #fef9f0 100%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #1e40af 0%, #dc2626 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #b45309 0%, #d97706 50%, #b45309 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-hover {
+    @apply transition-all duration-[400ms];
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-2;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+  }
+
+  .blob {
+    @apply absolute rounded-full opacity-35 -z-0;
+    filter: blur(80px);
+  }
+
+  .scroll-reveal {
+    @apply opacity-0 translate-y-8;
+    transition: all 0.8s ease-out;
+  }
+
+  .scroll-reveal.active {
+    @apply opacity-100 translate-y-0;
+  }
+
+  .nav-link {
+    @apply relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-[-4px] left-0 h-0.5 w-0;
+    background: linear-gradient(90deg, #2563eb, #dc2626);
+    transition: width 0.3s ease;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    @apply transition-all duration-300;
+  }
+
+  .btn-primary:hover {
+    @apply -translate-y-0.5;
+    box-shadow: 0 10px 30px -10px rgba(37, 99, 235, 0.5);
+  }
+
+  .btn-accent {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    @apply transition-all duration-300;
+  }
+
+  .btn-accent:hover {
+    @apply -translate-y-0.5;
+    box-shadow: 0 10px 30px -10px rgba(220, 38, 38, 0.5);
+  }
+
+  .btn-gold {
+    background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+    @apply transition-all duration-300;
+  }
+
+  .btn-gold:hover {
+    @apply -translate-y-0.5;
+    box-shadow: 0 10px 30px -10px rgba(217, 119, 6, 0.5);
+  }
+
+  .pattern-dots {
+    background-image: radial-gradient(circle, #e2e8f0 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .pattern-dots-light {
+    background-image: radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .magnetic-btn {
+    transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .glow-pulse {
+    animation: glowPulse 3s ease-in-out infinite;
+  }
+
+  .shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite;
+  }
+
+  .image-reveal {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    animation: imageReveal 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    animation-delay: 0.5s;
+  }
+
+  .typing-cursor::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+    @apply text-accent-600 font-light;
+  }
+
+  .section-label {
+    @apply inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest;
+  }
+
+  .process-line::after {
+    content: '';
+    @apply absolute left-6 top-14 bottom-0 w-0.5 bg-gradient-to-b from-primary-200 to-transparent;
+  }
+
+  .tab-active {
+    @apply bg-white text-primary-700 shadow-md;
+  }
+
+  .country-card-shine {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 60%);
+  }
+}
+
+@layer utilities {
+  .stat-number {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes imageReveal {
+  to { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(37, 99, 235, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(37, 99, 235, 0.4), 0 0 60px rgba(220, 38, 38, 0.1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes blobMove1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 30px) scale(0.9); }
+}
+
+@keyframes blobMove2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-40px, 20px) scale(1.15); }
+  66% { transform: translate(20px, -30px) scale(0.85); }
+}
+
+@keyframes blobMove3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(50px, 40px) scale(1.2); }
+}
+
+@keyframes blobMove4 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-30px, -40px) scale(0.8); }
+}
+
+@keyframes scrollWheel {
+  0% { top: 4px; opacity: 1; }
+  50% { top: 18px; opacity: 0.3; }
+  100% { top: 4px; opacity: 1; }
+}
+
+@keyframes particleFloat {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-100px) rotate(720deg); opacity: 0; }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(2); opacity: 0; }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* TipTap rich text editor — placeholder text for empty editors */
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  color: #94a3b8;
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+/* Clears floated images (from the RTE's text-wrap-around-image option)
+   so content after a floated image doesn't visually spill into whatever
+   comes after the prose block, both in the editor and on the public site. */
+.prose::after,
+.ProseMirror::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ── Custom scrollbars ──────────────────────────────────────────────────
+   Default browser scrollbars are thick and clash with the site's design.
+   These apply everywhere (main page scroll, the nav's mega-menu overflow,
+   mobile menu, modals, the RTE editor, etc.) — thin, rounded, and tinted
+   to match the public site's brand colors. The admin dashboard overrides
+   these to a calmer slate tone matching its own toned-down palette. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: theme('colors.primary.300') transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: theme('colors.primary.300');
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: theme('colors.primary.400');
+}
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Admin dashboard: calmer slate scrollbar instead of the brand colors,
+   matching its toned-down UI. */
+.admin-root {
+  scrollbar-color: theme('colors.slate.300') transparent;
+}
+.admin-root *::-webkit-scrollbar-thumb {
+  background-color: theme('colors.slate.300');
+}
+.admin-root *::-webkit-scrollbar-thumb:hover {
+  background-color: theme('colors.slate.400');
+}

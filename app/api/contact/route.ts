@@ -1,7 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { contactSchema } from "@/lib/validation";
-import { contactNotificationHtml, contactReceiverEmail, sendMail } from "@/lib/mailer";
+import {
+  contactNotificationHtml,
+  contactReceiverEmail,
+  sendMail,
+} from "@/lib/mailer";
 
 // Very small in-memory rate limiter: max 5 submissions per IP per 10 minutes.
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
@@ -11,7 +15,7 @@ const hits = new Map<string, number[]>();
 function isRateLimited(ip: string) {
   const now = Date.now();
   const timestamps = (hits.get(ip) || []).filter(
-    (t) => now - t < RATE_LIMIT_WINDOW_MS
+    (t) => now - t < RATE_LIMIT_WINDOW_MS,
   );
   timestamps.push(now);
   hits.set(ip, timestamps);
@@ -23,7 +27,7 @@ export async function POST(req: NextRequest) {
   if (isRateLimited(ip)) {
     return NextResponse.json(
       { error: "Too many requests. Please try again later." },
-      { status: 429 }
+      { status: 429 },
     );
   }
 
@@ -37,8 +41,11 @@ export async function POST(req: NextRequest) {
   const parsed = contactSchema.safeParse(body);
   if (!parsed.success) {
     return NextResponse.json(
-      { error: "Validation failed", details: parsed.error.flatten().fieldErrors },
-      { status: 400 }
+      {
+        error: "Validation failed",
+        details: parsed.error.flatten().fieldErrors,
+      },
+      { status: 400 },
     );
   }
 
@@ -66,7 +73,12 @@ export async function POST(req: NextRequest) {
     await sendMail({
       to: await contactReceiverEmail(),
       subject: `New consultation request — ${name}`,
-      html: contactNotificationHtml(lead),
+      html: contactNotificationHtml({
+        ...lead,
+        destination: lead.destination ?? undefined,
+        service: lead.service ?? undefined,
+        message: lead.message ?? undefined,
+      }),
       replyTo: email,
     });
   } catch (err) {

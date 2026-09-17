@@ -1,7 +1,13 @@
 import { cache } from "react";
 import { prisma } from "@/lib/prisma";
-import type { Company, Destination, Service, Testimonial, SiteConfig } from "@/types";
-
+import type {
+  Company,
+  Destination,
+  Service,
+  Testimonial,
+  SiteConfig,
+  FAQ,
+} from "@/types";
 /**
  * All content the public site displays (company info, nav config,
  * destinations, services, testimonials, FAQs, team) now lives in
@@ -11,28 +17,40 @@ import type { Company, Destination, Service, Testimonial, SiteConfig } from "@/t
  */
 
 function flatten<T extends { id: string; slug?: string; data: any }>(row: T) {
-  return { id: row.id, ...(row.slug ? { slug: row.slug } : {}), ...(row.data as object) };
+  return {
+    id: row.id,
+    ...(row.slug ? { slug: row.slug } : {}),
+    ...(row.data as object),
+  };
 }
 
 export const getCompany = cache(async (): Promise<Company> => {
-  const row = await prisma.siteContent.findUnique({ where: { key: "company" } });
+  const row = await prisma.siteContent.findUnique({
+    where: { key: "company" },
+  });
   return row?.data as unknown as Company;
 });
 
 export const getSiteConfig = cache(async (): Promise<SiteConfig> => {
-  const row = await prisma.siteContent.findUnique({ where: { key: "site-config" } });
+  const row = await prisma.siteContent.findUnique({
+    where: { key: "site-config" },
+  });
   return row?.data as unknown as SiteConfig;
 });
 
 export const getDestinations = cache(async (): Promise<Destination[]> => {
-  const rows = await prisma.destination.findMany({ orderBy: { createdAt: "asc" } });
+  const rows = await prisma.destination.findMany({
+    orderBy: { createdAt: "asc" },
+  });
   return rows.map(flatten) as unknown as Destination[];
 });
 
-export const getDestinationBySlug = cache(async (slug: string): Promise<Destination | undefined> => {
-  const row = await prisma.destination.findUnique({ where: { slug } });
-  return row ? (flatten(row) as unknown as Destination) : undefined;
-});
+export const getDestinationBySlug = cache(
+  async (slug: string): Promise<Destination | undefined> => {
+    const row = await prisma.destination.findUnique({ where: { slug } });
+    return row ? (flatten(row) as unknown as Destination) : undefined;
+  },
+);
 
 export const getServices = cache(async (): Promise<Service[]> => {
   const rows = await prisma.service.findMany({ orderBy: { createdAt: "asc" } });
@@ -54,13 +72,21 @@ export const getTestimonials = cache(async (): Promise<Testimonial[]> => {
   }) as unknown as Testimonial[];
 });
 
-export const getFaqs = cache(async () => {
-  const rows = await prisma.fAQ.findMany({ orderBy: [{ category: "asc" }, { order: "asc" }] });
-  return rows.map((r: { id: string; category: string; data: any }) => ({
-    id: r.id,
-    category: r.category,
-    ...(r.data as object),
-  }));
+export const getFaqs = cache(async (): Promise<FAQ[]> => {
+  const rows = await prisma.fAQ.findMany({
+    orderBy: [{ category: "asc" }, { order: "asc" }],
+  });
+
+  return rows.map(
+    (r: { id: string; category: string; data: any }): FAQ => ({
+      id: r.id,
+      category: r.category,
+      question: r.data.question,
+      answer: r.data.answer,
+      tags: r.data.tags ?? [],
+      order: r.data.order ?? 0,
+    }),
+  );
 });
 
 export const getTeam = cache(async () => {
@@ -103,22 +129,30 @@ const DEFAULT_TEST_PREP_HERO: PageHero = {
 };
 
 export const getAboutHero = cache(async (): Promise<PageHero> => {
-  const row = await prisma.siteContent.findUnique({ where: { key: "page-about-hero" } });
+  const row = await prisma.siteContent.findUnique({
+    where: { key: "page-about-hero" },
+  });
   return (row?.data as unknown as PageHero) ?? DEFAULT_ABOUT_HERO;
 });
 
 export const getTestPrepHero = cache(async (): Promise<PageHero> => {
-  const row = await prisma.siteContent.findUnique({ where: { key: "page-test-prep-hero" } });
+  const row = await prisma.siteContent.findUnique({
+    where: { key: "page-test-prep-hero" },
+  });
   return (row?.data as unknown as PageHero) ?? DEFAULT_TEST_PREP_HERO;
 });
 
 export const getPrivacyPolicy = cache(async (): Promise<LegalPage | null> => {
-  const row = await prisma.siteContent.findUnique({ where: { key: "legal-privacy-policy" } });
+  const row = await prisma.siteContent.findUnique({
+    where: { key: "legal-privacy-policy" },
+  });
   return (row?.data as unknown as LegalPage) ?? null;
 });
 
 export const getTermsOfService = cache(async (): Promise<LegalPage | null> => {
-  const row = await prisma.siteContent.findUnique({ where: { key: "legal-terms-of-service" } });
+  const row = await prisma.siteContent.findUnique({
+    where: { key: "legal-terms-of-service" },
+  });
   return (row?.data as unknown as LegalPage) ?? null;
 });
 
@@ -150,6 +184,8 @@ export interface SeoSettings {
 }
 
 export const getSeoSettings = cache(async (): Promise<SeoSettings | null> => {
-  const row = await prisma.siteContent.findUnique({ where: { key: "seo-settings" } });
+  const row = await prisma.siteContent.findUnique({
+    where: { key: "seo-settings" },
+  });
   return (row?.data as unknown as SeoSettings) ?? null;
 });

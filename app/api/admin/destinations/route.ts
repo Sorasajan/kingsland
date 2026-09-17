@@ -3,6 +3,16 @@ import { prisma } from "@/lib/prisma";
 import { slugify } from "@/lib/slug";
 import { z } from "zod";
 
+// Local JSON type — avoids depending on @prisma/client's internal type exports,
+// which seem to differ from the standard package in this project's setup.
+type JsonValue =
+  | string
+  | number
+  | boolean
+  | null
+  | JsonValue[]
+  | { [key: string]: JsonValue };
+
 const destinationSchema = z
   .object({
     name: z.string().trim().min(2).max(80),
@@ -14,7 +24,9 @@ function flatten(row: { id: string; slug: string; data: any }) {
 }
 
 export async function GET() {
-  const rows = await prisma.destination.findMany({ orderBy: { createdAt: "asc" } });
+  const rows = await prisma.destination.findMany({
+    orderBy: { createdAt: "asc" },
+  });
   return NextResponse.json({ destinations: rows.map(flatten) });
 }
 
@@ -29,8 +41,11 @@ export async function POST(req: NextRequest) {
   const parsed = destinationSchema.safeParse(body);
   if (!parsed.success) {
     return NextResponse.json(
-      { error: "Validation failed", details: parsed.error.flatten().fieldErrors },
-      { status: 400 }
+      {
+        error: "Validation failed",
+        details: parsed.error.flatten().fieldErrors,
+      },
+      { status: 400 },
     );
   }
 
@@ -42,7 +57,12 @@ export async function POST(req: NextRequest) {
   }
 
   const row = await prisma.destination.create({
-    data: { id: slug, slug, name: parsed.data.name, data: parsed.data },
+    data: {
+      id: slug,
+      slug,
+      name: parsed.data.name,
+      data: parsed.data as JsonValue as any,
+    },
   });
 
   return NextResponse.json({ destination: flatten(row) }, { status: 201 });

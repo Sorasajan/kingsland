@@ -12,7 +12,8 @@ import type { Role } from "@/lib/permissions";
 // `jwt.verify()` there can silently throw on every call, which looks like
 // "the user is never logged in" even though the cookie is set correctly.
 
-const JWT_SECRET = process.env.JWT_SECRET || "dev-only-insecure-secret-change-me";
+const JWT_SECRET =
+  process.env.JWT_SECRET || "dev-only-insecure-secret-change-me";
 const secretKey = new TextEncoder().encode(JWT_SECRET);
 
 export const SESSION_COOKIE = "kingsland_admin_session";
@@ -25,7 +26,9 @@ export interface AdminSessionPayload {
   role: Role;
 }
 
-export async function signSession(payload: AdminSessionPayload): Promise<string> {
+export async function signSession(
+  payload: AdminSessionPayload,
+): Promise<string> {
   return new SignJWT({ ...payload })
     .setProtectedHeader({ alg: "HS256" })
     .setIssuedAt()
@@ -33,7 +36,9 @@ export async function signSession(payload: AdminSessionPayload): Promise<string>
     .sign(secretKey);
 }
 
-export async function verifySession(token: string): Promise<AdminSessionPayload | null> {
+export async function verifySession(
+  token: string,
+): Promise<AdminSessionPayload | null> {
   try {
     const { payload } = await jwtVerify(token, secretKey);
     return payload as unknown as AdminSessionPayload;
@@ -44,7 +49,8 @@ export async function verifySession(token: string): Promise<AdminSessionPayload 
 
 export const sessionCookieOptions = {
   httpOnly: true,
-  secure: process.env.NODE_ENV === "production",
+  // secure: process.env.NODE_ENV === "production",
+  secure: false,
   sameSite: "lax" as const,
   path: "/",
   maxAge: SESSION_TTL_SECONDS,

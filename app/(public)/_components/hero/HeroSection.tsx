@@ -3,7 +3,14 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, GraduationCap, Globe, Shield, Award, ChevronDown } from "lucide-react";
+import {
+  ArrowRight,
+  GraduationCap,
+  Globe,
+  Shield,
+  Award,
+  ChevronDown,
+} from "lucide-react";
 import FloatingCard from "./FloatingCard";
 
 const destinations = [
@@ -45,21 +52,31 @@ export default function HeroSection() {
       id="home"
       className="relative min-h-screen flex items-center overflow-hidden pt-28"
       style={{
-        background: "linear-gradient(135deg, #f0f7ff 0%, #e8f4fd 35%, #fdf0f0 70%, #fef9f0 100%)",
+        background:
+          "linear-gradient(135deg, #f0f7ff 0%, #e8f4fd 35%, #fdf0f0 70%, #fef9f0 100%)",
       }}
     >
       {/* Animated blobs */}
       <div
         className="absolute rounded-full opacity-35 -z-0 w-[500px] h-[500px] bg-primary-200 -top-32 -left-32"
-        style={{ filter: "blur(80px)", animation: "blobMove1 15s ease-in-out infinite" }}
+        style={{
+          filter: "blur(80px)",
+          animation: "blobMove1 15s ease-in-out infinite",
+        }}
       />
       <div
         className="absolute rounded-full opacity-35 -z-0 w-[400px] h-[400px] bg-red-100 top-20 right-0"
-        style={{ filter: "blur(80px)", animation: "blobMove2 18s ease-in-out infinite" }}
+        style={{
+          filter: "blur(80px)",
+          animation: "blobMove2 18s ease-in-out infinite",
+        }}
       />
       <div
         className="absolute rounded-full opacity-35 -z-0 w-[350px] h-[350px] bg-blue-100 bottom-10 left-1/4"
-        style={{ filter: "blur(80px)", animation: "blobMove3 20s ease-in-out infinite" }}
+        style={{
+          filter: "blur(80px)",
+          animation: "blobMove3 20s ease-in-out infinite",
+        }}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
@@ -79,53 +96,106 @@ export default function HeroSection() {
 
             {/* Headline */}
             <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 leading-[1.1]">
-              <span className="block" style={{ animation: "fadeUp 0.8s ease-out 0.3s both", opacity: 0 }}>
+              <span
+                className="block"
+                style={{
+                  animation: "fadeUp 0.8s ease-out 0.3s both",
+                  opacity: 0,
+                }}
+              >
                 Shape Your Future
               </span>
               <span
                 className="block text-gradient italic"
-                style={{ animation: "fadeUp 0.8s ease-out 0.5s both", opacity: 0 }}
+                style={{
+                  animation: "fadeUp 0.8s ease-out 0.5s both",
+                  opacity: 0,
+                }}
               >
                 {typedText || "Beyond Borders"}
                 <span className="text-accent-500 animate-pulse">|</span>
               </span>
             </h1>
 
-            <p className="text-lg sm:text-xl text-slate-500 leading-relaxed max-w-xl" style={{ animation: "fadeUp 0.8s ease-out 0.7s both", opacity: 0 }}>
-              Nepal&apos;s premier education consultancy guiding ambitious students to world-class universities in Australia, UK, Canada, USA &amp; Europe. Free counseling. Proven results.
+            <p
+              className="text-lg sm:text-xl text-slate-500 leading-relaxed max-w-xl"
+              style={{
+                animation: "fadeUp 0.8s ease-out 0.7s both",
+                opacity: 0,
+              }}
+            >
+              Nepal&apos;s premier education consultancy guiding ambitious
+              students to world-class universities in Australia, UK, Canada, USA
+              &amp; Europe. Free counseling. Proven results.
             </p>
 
             {/* Destination Pills */}
-            <div className="flex flex-wrap gap-2" style={{ animation: "fadeUp 0.8s ease-out 0.85s both", opacity: 0 }}>
+            <div
+              className="flex flex-wrap gap-2"
+              style={{
+                animation: "fadeUp 0.8s ease-out 0.85s both",
+                opacity: 0,
+              }}
+            >
               {destinations.map((dest, i) => (
-                <div key={i} className="flex items-center gap-1.5 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-full px-3 py-1.5 text-xs font-medium text-slate-700 shadow-sm">
+                <div
+                  key={i}
+                  className="flex items-center gap-1.5 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-full px-3 py-1.5 text-xs font-medium text-slate-700 shadow-sm"
+                >
                   <span>{dest.flag}</span>
                   <span>{dest.name}</span>
-                  <span className="text-primary-500 font-bold">{dest.students}</span>
+                  <span className="text-primary-500 font-bold">
+                    {dest.students}
+                  </span>
                 </div>
               ))}
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4" style={{ animation: "fadeUp 0.8s ease-out 0.9s both", opacity: 0 }}>
-              <Link href="/contact" className="btn-primary text-white px-8 py-4 rounded-full text-base font-semibold shadow-xl shadow-primary-500/25 text-center inline-flex items-center justify-center gap-2 group magnetic-btn">
+            <div
+              className="flex flex-col sm:flex-row gap-4"
+              style={{
+                animation: "fadeUp 0.8s ease-out 0.9s both",
+                opacity: 0,
+              }}
+            >
+              <Link
+                href="/contact"
+                className="btn-primary text-white px-8 py-4 rounded-full text-base font-semibold shadow-xl shadow-primary-500/25 text-center inline-flex items-center justify-center gap-2 group magnetic-btn"
+              >
                 Book Free Counseling
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
-              <Link href="/destinations" className="px-8 py-4 rounded-full text-base font-semibold text-slate-700 bg-white border border-slate-200 hover:border-primary-300 hover:shadow-lg transition-all text-center inline-flex items-center justify-center gap-2 group magnetic-btn">
+              <Link
+                href="/destinations"
+                className="px-8 py-4 rounded-full text-base font-semibold text-slate-700 bg-white border border-slate-200 hover:border-primary-300 hover:shadow-lg transition-all text-center inline-flex items-center justify-center gap-2 group magnetic-btn"
+              >
                 <Globe className="w-5 h-5 text-primary-500 group-hover:scale-110 transition-transform" />
                 Explore Destinations
               </Link>
             </div>
 
             {/* Trust Badges */}
-            <div className="pt-6 border-t border-slate-200/60" style={{ animation: "fadeUp 0.8s ease-out 1.1s both", opacity: 0 }}>
-              <p className="text-xs text-slate-400 uppercase tracking-wider mb-4 font-medium">Recognized &amp; Certified</p>
+            <div
+              className="pt-6 border-t border-slate-200/60"
+              style={{
+                animation: "fadeUp 0.8s ease-out 1.1s both",
+                opacity: 0,
+              }}
+            >
+              <p className="text-xs text-slate-400 uppercase tracking-wider mb-4 font-medium">
+                Recognized &amp; Certified
+              </p>
               <div className="flex flex-wrap items-center gap-5 opacity-60 hover:opacity-100 transition-all duration-500">
                 {badges.map(({ Icon, label, color }, i) => (
-                  <div key={i} className="flex items-center gap-2 hover:scale-105 transition-transform cursor-default">
+                  <div
+                    key={i}
+                    className="flex items-center gap-2 hover:scale-105 transition-transform cursor-default"
+                  >
                     <Icon className={`w-4 h-4 ${color}`} />
-                    <span className="text-xs font-semibold text-slate-700">{label}</span>
+                    <span className="text-xs font-semibold text-slate-700">
+                      {label}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -135,7 +205,10 @@ export default function HeroSection() {
           {/* ── Right Visual ── */}
           <div className="relative hidden lg:block">
             {/* Orbit rings — use inline keyframes via style tag for reliability */}
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ zIndex: 0 }}>
+            <div
+              className="absolute inset-0 flex items-center justify-center pointer-events-none"
+              style={{ zIndex: 0 }}
+            >
               {/* Outer ring */}
               <div
                 style={{
@@ -168,17 +241,19 @@ export default function HeroSection() {
                   animation: "spinCW 20s linear infinite",
                 }}
               >
-                <div style={{
-                  position: "absolute",
-                  top: -6,
-                  left: "50%",
-                  transform: "translateX(-50%)",
-                  width: 12,
-                  height: 12,
-                  borderRadius: "50%",
-                  background: "linear-gradient(135deg,#2563eb,#1d4ed8)",
-                  boxShadow: "0 0 10px rgba(37,99,235,0.5)",
-                }} />
+                <div
+                  style={{
+                    position: "absolute",
+                    top: -6,
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    width: 12,
+                    height: 12,
+                    borderRadius: "50%",
+                    background: "linear-gradient(135deg,#2563eb,#1d4ed8)",
+                    boxShadow: "0 0 10px rgba(37,99,235,0.5)",
+                  }}
+                />
               </div>
               {/* Orbiting dot on inner ring */}
               <div
@@ -190,23 +265,31 @@ export default function HeroSection() {
                   animation: "spinCCW 25s linear infinite",
                 }}
               >
-                <div style={{
-                  position: "absolute",
-                  top: -5,
-                  left: "50%",
-                  transform: "translateX(-50%)",
-                  width: 10,
-                  height: 10,
-                  borderRadius: "50%",
-                  background: "linear-gradient(135deg,#dc2626,#b91c1c)",
-                  boxShadow: "0 0 8px rgba(220,38,38,0.5)",
-                }} />
+                <div
+                  style={{
+                    position: "absolute",
+                    top: -5,
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    width: 10,
+                    height: 10,
+                    borderRadius: "50%",
+                    background: "linear-gradient(135deg,#dc2626,#b91c1c)",
+                    boxShadow: "0 0 8px rgba(220,38,38,0.5)",
+                  }}
+                />
               </div>
             </div>
 
             {/* Main Image */}
             <div className="relative z-10">
-              <div className="rounded-3xl shadow-2xl shadow-primary-900/10 overflow-hidden" style={{ animation: "fadeUp 1s ease-out 0.4s both", opacity: 0 }}>
+              <div
+                className="rounded-3xl shadow-2xl shadow-primary-900/10 overflow-hidden"
+                style={{
+                  animation: "fadeUp 1s ease-out 0.4s both",
+                  opacity: 0,
+                }}
+              >
                 <Image
                   src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=700&fit=crop&q=85"
                   alt="Nepali students celebrating admission abroad"
@@ -262,21 +345,6 @@ export default function HeroSection() {
             />
           </div>
         </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <span className="text-xs text-slate-400 font-medium tracking-widest uppercase">Scroll</span>
-        <Link href="#stats" className="w-[26px] h-10 border-2 border-slate-300/50 rounded-[13px] relative hover:border-primary-400 transition-colors">
-          <div
-            className="w-1 h-2 rounded-sm absolute left-1/2 -translate-x-1/2"
-            style={{
-              background: "linear-gradient(180deg, #2563eb, #dc2626)",
-              animation: "scrollWheelAnim 2s ease-in-out infinite",
-              top: 4,
-            }}
-          />
-        </Link>
       </div>
 
       {/* Inline keyframes for orbit + wheel animations */}

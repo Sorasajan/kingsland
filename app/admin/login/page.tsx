@@ -46,7 +46,9 @@ function LoginForm() {
           <div className="w-14 h-14 rounded-2xl bg-slate-900 flex items-center justify-center mx-auto mb-4">
             <GraduationCap className="w-7 h-7 text-white" />
           </div>
-          <h1 className="font-serif text-2xl font-bold text-slate-900">Kingsland Abroad</h1>
+          <h1 className="font-serif text-2xl font-bold text-slate-900">
+            Kingsland Abroad
+          </h1>
           <p className="text-sm text-slate-500 mt-1">Admin Dashboard</p>
         </div>
 
@@ -55,7 +57,9 @@ function LoginForm() {
           className="bg-white rounded-2xl shadow-xl border border-slate-100 p-8 space-y-5"
         >
           <div>
-            <label className="block text-xs font-semibold text-slate-600 mb-1.5">Email</label>
+            <label className="block text-xs font-semibold text-slate-600 mb-1.5">
+              Email
+            </label>
             <div className="relative">
               <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
               <input
@@ -70,8 +74,13 @@ function LoginForm() {
           </div>
           <div>
             <div className="flex items-center justify-between mb-1.5">
-              <label className="block text-xs font-semibold text-slate-600">Password</label>
-              <a href="/admin/forgot-password" className="text-xs font-semibold text-slate-500 hover:text-slate-900">
+              <label className="block text-xs font-semibold text-slate-600">
+                Password
+              </label>
+              <a
+                href="/admin/forgot-password"
+                className="text-xs font-semibold text-slate-500 hover:text-slate-900"
+              >
                 Forgot password?
               </a>
             </div>
@@ -99,14 +108,14 @@ function LoginForm() {
             disabled={loading}
             className="w-full bg-slate-900 hover:bg-slate-800 text-white py-3.5 rounded-xl font-semibold text-sm flex items-center justify-center gap-2 transition-colors disabled:opacity-60"
           >
-            {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <ArrowRight className="w-4 h-4" />}
+            {loading ? (
+              <Loader2 className="w-4 h-4 animate-spin" />
+            ) : (
+              <ArrowRight className="w-4 h-4" />
+            )}
             {loading ? "Signing in..." : "Sign In"}
           </button>
         </form>
-
-        <p className="text-center text-xs text-slate-400 mt-6">
-          Run <code className="bg-slate-100 px-1.5 py-0.5 rounded">npm run seed:admin</code> to create your first admin login.
-        </p>
       </div>
     </div>
   );

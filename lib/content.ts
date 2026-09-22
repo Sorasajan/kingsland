@@ -118,7 +118,7 @@ const DEFAULT_ABOUT_HERO: PageHero = {
   badge: "About Summit Abroad",
   title: "Nepal's Most Trusted Education Partner",
   subtitle:
-    "Founded in 2010, we have helped 2,500+ Nepali students reach world-class universities across 15+ countries.",
+    "Founded in 2019, we have helped 2,500+ Nepali students reach world-class universities across 5 countries.",
 };
 
 const DEFAULT_TEST_PREP_HERO: PageHero = {

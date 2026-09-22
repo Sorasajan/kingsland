@@ -8,7 +8,7 @@ const FALLBACK_TITLE = "Kingsland Abroad — Your Gateway to Global Education";
 const FALLBACK_DESCRIPTION =
   "Nepal's premier education consultancy guiding ambitious students to world-class universities in Australia, UK, Canada, USA & Europe since 2010.";
 const FALLBACK_SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://kingslandabroad.com";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://kingsabroad.com";
 
 export async function generateMetadata(): Promise<Metadata> {
   const seo = await getSeoSettings();

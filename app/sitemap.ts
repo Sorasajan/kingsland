@@ -5,8 +5,7 @@ import { getDestinations } from "@/lib/content";
 export const dynamic = "force-dynamic";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const siteUrl =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://kingslandabroad.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://kingsabroad.com";
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: `${siteUrl}/`, changeFrequency: "weekly", priority: 1 },

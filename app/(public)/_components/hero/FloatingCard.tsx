@@ -29,7 +29,7 @@ export default function FloatingCard({
       className={cn(
         "absolute bg-white/90 backdrop-blur-xl rounded-2xl p-5 shadow-2xl border border-white/50 animate-float",
         glow && "glow-pulse",
-        position
+        position,
       )}
       style={{ animationDelay: delay }}
     >
@@ -57,7 +57,7 @@ export default function FloatingCard({
           <div
             className={cn(
               "w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br",
-              iconBg
+              iconBg,
             )}
           >
             {icon}

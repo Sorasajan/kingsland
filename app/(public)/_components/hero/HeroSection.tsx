@@ -90,7 +90,7 @@ export default function HeroSection() {
             >
               <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
               <span className="text-xs font-semibold text-primary-700 uppercase tracking-wider">
-                Trusted by 2,500+ Nepali Students Since 2010
+                Trusted by 2,500+ Nepali Students Since 2019
               </span>
             </div>
 
@@ -313,7 +313,7 @@ export default function HeroSection() {
               <FloatingCard
                 position="-right-8 bottom-32"
                 icon={<Globe className="w-6 h-6 text-accent-600" />}
-                value="15+"
+                value="5"
                 label="Countries"
                 iconBg="from-accent-100 to-accent-200"
                 delay="3s"

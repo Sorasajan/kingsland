@@ -38,22 +38,31 @@ export default function CTASection() {
             </div>
             <div className="flex items-center gap-1">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-3 h-3 text-amber-400 fill-amber-400" />
+                <Star
+                  key={i}
+                  className="w-3 h-3 text-amber-400 fill-amber-400"
+                />
               ))}
             </div>
-            <span className="text-white/80 text-xs">Trusted by 2,500+ students</span>
+            <span className="text-white/80 text-xs">
+              Trusted by 2,500+ students
+            </span>
           </div>
 
           <h2 className="font-serif text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Your Dream University<br />
+            Your Dream University
+            <br />
             <span className="text-gradient-gold">Awaits You.</span>
           </h2>
           <p className="text-xl text-primary-100 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Book a free 60-minute counseling session. No obligations, no pressure — just expert guidance to map your path to global education.
+            Book a free 60-minute counseling session. No obligations, no
+            pressure — just expert guidance to map your path to global
+            education.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Link href="/contact"
+            <Link
+              href="/contact"
               className="btn-accent text-white px-10 py-4 rounded-full text-lg font-semibold shadow-2xl shadow-accent-900/40 inline-flex items-center justify-center gap-2"
             >
               <CalendarCheck className="w-5 h-5" />
@@ -64,7 +73,7 @@ export default function CTASection() {
               className="px-10 py-4 rounded-full text-lg font-semibold text-white border-2 border-white/30 hover:bg-white/10 backdrop-blur-sm transition-all inline-flex items-center justify-center gap-2"
             >
               <Phone className="w-5 h-5" />
-              Call: +977-1-4444444
+              Call: +977-071-537586
             </a>
           </div>
 

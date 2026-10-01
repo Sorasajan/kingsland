@@ -139,7 +139,7 @@ function DestinationsMega({
             Study Destinations
           </p>
           <h3 className="font-serif text-2xl font-bold text-white leading-tight mb-4">
-            Find Your Perfect Study Country
+            Find Your Perfect Country to Study
           </h3>
           <p className="text-sm text-primary-200 leading-relaxed">
             We guide Nepali students to world-class universities across{" "}
@@ -345,7 +345,13 @@ function ServicesMega({
 }
 
 // ── Test Prep ─────────────────────────────────────────────────────────────────
-function TestPrepMega({ close, services }: { close: () => void; services: Service[] }) {
+function TestPrepMega({
+  close,
+  services,
+}: {
+  close: () => void;
+  services: Service[];
+}) {
   const testPrepSvc = services.find((s) => s.id === "test-prep") as any;
   const testPrepTests = (testPrepSvc?.tests ?? []) as Array<{
     name: string;
@@ -580,7 +586,13 @@ function TestPrepMega({ close, services }: { close: () => void; services: Servic
 }
 
 // ── About ─────────────────────────────────────────────────────────────────────
-function AboutMega({ close, company }: { close: () => void; company: Company }) {
+function AboutMega({
+  close,
+  company,
+}: {
+  close: () => void;
+  company: Company;
+}) {
   const aboutLinks = [
     {
       href: "/about",
@@ -722,7 +734,12 @@ function AboutMega({ close, company }: { close: () => void; company: Company }) 
 // ─────────────────────────────────────────────────────────────────────────────
 // MAIN NAVBAR
 // ─────────────────────────────────────────────────────────────────────────────
-export default function Navbar({ company, siteConfig, destinations, services }: NavbarProps) {
+export default function Navbar({
+  company,
+  siteConfig,
+  destinations,
+  services,
+}: NavbarProps) {
   const logoSrc = (company as any).logo?.imageUrl || defaultLogo;
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -766,7 +783,9 @@ export default function Navbar({ company, siteConfig, destinations, services }: 
   const isActive = (href: string, exact?: boolean) =>
     exact ? pathname === href : pathname.startsWith(href) && href !== "/";
 
-  const testPrepSvcForMobile = services.find((s) => s.id === "test-prep") as any;
+  const testPrepSvcForMobile = services.find(
+    (s) => s.id === "test-prep",
+  ) as any;
   const testPrepTests = (testPrepSvcForMobile?.tests ?? []) as Array<{
     name: string;
     duration: string;
@@ -947,13 +966,24 @@ export default function Navbar({ company, siteConfig, destinations, services }: 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
             {activeMega === "Destinations" && (
-              <DestinationsMega close={() => setActiveMega(null)} destinations={destinations} company={company} />
+              <DestinationsMega
+                close={() => setActiveMega(null)}
+                destinations={destinations}
+                company={company}
+              />
             )}
             {activeMega === "Services" && (
-              <ServicesMega close={() => setActiveMega(null)} services={services} company={company} />
+              <ServicesMega
+                close={() => setActiveMega(null)}
+                services={services}
+                company={company}
+              />
             )}
             {activeMega === "TestPrep" && (
-              <TestPrepMega close={() => setActiveMega(null)} services={services} />
+              <TestPrepMega
+                close={() => setActiveMega(null)}
+                services={services}
+              />
             )}
             {activeMega === "About" && (
               <AboutMega close={() => setActiveMega(null)} company={company} />

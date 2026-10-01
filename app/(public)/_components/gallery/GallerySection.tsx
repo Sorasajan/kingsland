@@ -5,7 +5,11 @@ import GalleryGrid, { type GalleryImageItem } from "./GalleryGrid";
 
 const PREVIEW_COUNT = 6;
 
-export default function GallerySection({ images }: { images: GalleryImageItem[] }) {
+export default function GallerySection({
+  images,
+}: {
+  images: GalleryImageItem[];
+}) {
   if (images.length === 0) return null;
   const preview = images.slice(0, PREVIEW_COUNT);
 
@@ -15,13 +19,15 @@ export default function GallerySection({ images }: { images: GalleryImageItem[] 
         <ScrollReveal>
           <div className="text-center max-w-2xl mx-auto mb-14">
             <span className="section-label text-accent-600 mb-3">
-              <span className="w-8 h-0.5 bg-accent-400 rounded" /> Life at Summit Abroad <span className="w-8 h-0.5 bg-accent-400 rounded" />
+              <span className="w-8 h-0.5 bg-accent-400 rounded" /> Life at Kings
+              Abroad <span className="w-8 h-0.5 bg-accent-400 rounded" />
             </span>
             <h2 className="font-serif text-4xl font-bold text-slate-900 mt-3 mb-4">
               Inside Our World
             </h2>
             <p className="text-slate-500">
-              Glimpses of our vibrant counseling sessions, test prep classes, and student celebrations.
+              Glimpses of our vibrant counseling sessions, test prep classes,
+              and student celebrations.
             </p>
           </div>
         </ScrollReveal>

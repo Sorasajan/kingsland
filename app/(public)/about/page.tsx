@@ -2,7 +2,12 @@ import AboutSection from "../_components/about/AboutSection";
 import GallerySection from "../_components/gallery/GallerySection";
 import CTASection from "../_components/cta/CTASection";
 import type { Metadata } from "next";
-import { getCompany, getTeam, getGalleryImages, getAboutHero } from "@/lib/content";
+import {
+  getCompany,
+  getTeam,
+  getGalleryImages,
+  getAboutHero,
+} from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "About Us | Summit Abroad",

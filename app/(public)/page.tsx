@@ -23,18 +23,27 @@ import {
 } from "@/lib/content";
 
 export default async function HomePage() {
-  const [company, siteConfig, destinations, services, testimonials, team, faqs, galleryImages, popupConfig] =
-    await Promise.all([
-      getCompany(),
-      getSiteConfig(),
-      getDestinations(),
-      getServices(),
-      getTestimonials(),
-      getTeam(),
-      getFaqs(),
-      getGalleryImages(),
-      getPopupConfig(),
-    ]);
+  const [
+    company,
+    siteConfig,
+    destinations,
+    services,
+    testimonials,
+    team,
+    faqs,
+    galleryImages,
+    popupConfig,
+  ] = await Promise.all([
+    getCompany(),
+    getSiteConfig(),
+    getDestinations(),
+    getServices(),
+    getTestimonials(),
+    getTeam(),
+    getFaqs(),
+    getGalleryImages(),
+    getPopupConfig(),
+  ]);
 
   return (
     <>
